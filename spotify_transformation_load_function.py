@@ -48,8 +48,9 @@ def songs(data):
     
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
-    Bucket = "spotify-etl-project-darshil"
+    Bucket = "spotify-etl-sarath"
     Key = "raw_data/to_processed/"
+
     
     spotify_data = []
     spotify_keys = []
